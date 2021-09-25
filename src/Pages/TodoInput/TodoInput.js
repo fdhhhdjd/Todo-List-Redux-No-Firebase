@@ -10,9 +10,9 @@ const TodoInput = () => {
   const handleSubmit = (e) => {
     e.preventDefault();
     if (task === "") {
-      return toast.info("Mời bạn nhập vào ô nha");
+      return toast.info("Mời bạn nhập vào ô nha 🙃");
     }
-    dispatch(addTodo(task), toast.success("Bạn đã thêm thành công "));
+    dispatch(addTodo(task), toast.success("Bạn đã thêm thành công 😊 "));
     setTask("");
   };
   const handleChange = (e) => {

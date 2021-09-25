@@ -4,7 +4,12 @@ const initialState = {
   todo: [
     {
       id: 1,
-      task: "tai dep trai",
+      task: "Tài quá là đẹp trai 1",
+      completed: false,
+    },
+    {
+      id: 2,
+      task: "Tài siêu đẹp trai",
       completed: false,
     },
   ],
