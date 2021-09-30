@@ -15,7 +15,6 @@ import "react-toastify/dist/ReactToastify.css";
 const TodoList = () => {
   const dispatch = useDispatch();
   const { todo } = useSelector((state) => state.data);
-
   const update = (id, updatedTask) => {
     dispatch(updateTodo({ id, updatedTask }));
   };

@@ -52,6 +52,7 @@ const todoReducer = (state = initialState, action) => {
         if (todo.id === action.payload.id) {
           return { ...todo, task: action.payload.updatedTask };
         }
+        return todo;
       });
       return {
         ...state,

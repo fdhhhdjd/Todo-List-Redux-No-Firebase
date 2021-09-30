@@ -10,6 +10,9 @@ const Todo = ({ id, task, completed, toggleTodo, updateTodo }) => {
   const [editStack, setEditStack] = useState(task);
   const handleUpload = (e) => {
     e.preventDefault();
+    if (editStack === task) {
+      return toast.info("moi ban nhap vao o input ");
+    }
     updateTodo(id, editStack);
     toast.success("Bạn đã sữa thành công 😍");
     setEdit(false);
