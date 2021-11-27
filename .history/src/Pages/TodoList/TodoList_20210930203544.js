@@ -26,22 +26,20 @@ const TodoList = () => {
       <ul>
         <TransitionGroup className="todo=list">
           {todo &&
-            todo
-              .sort((a, b) => (a.task < b.task ? -1 : 1))
-              .map((item) => {
-                return (
-                  <CSSTransition key={item.id} classNames="todo">
-                    <Todo
-                      key={item.id}
-                      id={item.id}
-                      task={item.task}
-                      completed={item.completed}
-                      toggleTodo={() => dispatch(completeTodo(item))}
-                      updateTodo={update}
-                    />
-                  </CSSTransition>
-                );
-              })}
+            todo.map((item) => {
+              return (
+                <CSSTransition key={item.id} classNames="todo">
+                  <Todo
+                    key={item.id}
+                    id={item.id}
+                    task={item.task}
+                    completed={item.completed}
+                    toggleTodo={() => dispatch(completeTodo(item))}
+                    updateTodo={update}
+                  />
+                </CSSTransition>
+              );
+            })}
         </TransitionGroup>
       </ul>
     </div>

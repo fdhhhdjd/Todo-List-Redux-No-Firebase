@@ -4,27 +4,12 @@ const initialState = {
   todo: [
     {
       id: 1,
-      task: "Nguyễn Tiến Tài",
+      task: "Tài quá là đẹp trai 1",
       completed: false,
     },
     {
       id: 2,
-      task: "Nguyễn Bảo khang",
-      completed: false,
-    },
-    {
-      id: 3,
-      task: "Trần Phi Hoàng",
-      completed: false,
-    },
-    {
-      id: 4,
-      task: " Nguyễn Hữu Quyền ",
-      completed: false,
-    },
-    {
-      id: 5,
-      task: "Bùi Huỳnh Quốc Trung",
+      task: "Tài siêu đẹp trai",
       completed: false,
     },
   ],

@@ -27,7 +27,7 @@ const TodoList = () => {
         <TransitionGroup className="todo=list">
           {todo &&
             todo
-              .sort((a, b) => (a.task < b.task ? -1 : 1))
+              .sort((a, b) => (a.task > b.task ? -1 : 1))
               .map((item) => {
                 return (
                   <CSSTransition key={item.id} classNames="todo">
